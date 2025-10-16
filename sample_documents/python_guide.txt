@@ -1,0 +1,95 @@
+# Sample Document 2: Python Programming Guide
+
+## Introduction to Python
+
+Python is a high-level, interpreted programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python has become one of the most popular programming languages in the world.
+
+## Key Features of Python
+
+### 1. Easy to Learn and Use
+Python has a simple syntax that resembles natural language, making it accessible for beginners while remaining powerful for experts.
+
+### 2. Interpreted Language
+Python code is executed line by line, which makes debugging easier and development faster.
+
+### 3. Dynamically Typed
+You don't need to declare variable types explicitly. Python automatically determines the type based on the value assigned.
+
+### 4. Object-Oriented
+Python supports object-oriented programming paradigms, including classes, inheritance, and polymorphism.
+
+### 5. Extensive Standard Library
+Python comes with a comprehensive standard library that provides modules for various tasks, from file I/O to web development.
+
+## Basic Python Syntax
+
+### Variables and Data Types
+```python
+# Numbers
+integer_var = 42
+float_var = 3.14
+
+# Strings
+string_var = "Hello, World!"
+
+# Lists
+my_list = [1, 2, 3, 4, 5]
+
+# Dictionaries
+my_dict = {"name": "John", "age": 30}
+```
+
+### Control Flow
+Python uses if-elif-else statements for conditional logic and for/while loops for iteration.
+
+### Functions
+Functions in Python are defined using the `def` keyword and can accept parameters and return values.
+
+## Popular Python Libraries
+
+### Data Science and Machine Learning
+- **NumPy**: Numerical computing with arrays
+- **Pandas**: Data manipulation and analysis
+- **Matplotlib**: Data visualization
+- **Scikit-learn**: Machine learning algorithms
+- **TensorFlow/PyTorch**: Deep learning frameworks
+
+### Web Development
+- **Django**: Full-featured web framework
+- **Flask**: Lightweight web framework
+- **FastAPI**: Modern, fast web framework for building APIs
+
+### Automation and Scripting
+- **Selenium**: Web browser automation
+- **BeautifulSoup**: Web scraping
+- **Requests**: HTTP library
+
+## Best Practices
+
+1. **Follow PEP 8**: Python's style guide for code formatting
+2. **Use Virtual Environments**: Isolate project dependencies
+3. **Write Documentation**: Use docstrings to document code
+4. **Error Handling**: Use try-except blocks appropriately
+5. **Testing**: Write unit tests for your code
+
+## Python Use Cases
+
+Python is widely used in various domains:
+
+1. **Web Development**: Building websites and web applications
+2. **Data Science**: Analyzing and visualizing data
+3. **Machine Learning**: Developing predictive models
+4. **Automation**: Automating repetitive tasks
+5. **Scientific Computing**: Numerical simulations and research
+6. **Game Development**: Creating games with libraries like Pygame
+7. **Desktop Applications**: Building GUI applications
+
+## Why Choose Python?
+
+- **Versatility**: Suitable for various types of projects
+- **Large Community**: Extensive resources and community support
+- **Career Opportunities**: High demand in the job market
+- **Rapid Development**: Quick prototyping and development
+- **Cross-Platform**: Runs on Windows, macOS, Linux, and more
+
+Python continues to grow in popularity and remains an excellent choice for both beginners and experienced developers.
