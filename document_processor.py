@@ -2,7 +2,12 @@ import os
 import re
 from typing import List, Dict, Any
 import PyPDF2
-import fitz  # PyMuPDF
+try:
+    import fitz  # PyMuPDF (optional)
+    HAS_PYMUPDF = True
+except ImportError:
+    HAS_PYMUPDF = False
+    print("PyMuPDF not available, using PyPDF2 for PDF processing")
 from docx import Document as DocxDocument
 from pathlib import Path
 from config import settings
@@ -16,25 +21,29 @@ class DocumentProcessor:
         self.upload_dir.mkdir(exist_ok=True)
     
     def extract_text_from_pdf(self, file_path: str) -> str:
-        """Extract text from PDF using PyMuPDF (more reliable)."""
-        try:
-            text = ""
-            doc = fitz.open(file_path)
-            for page in doc:
-                text += page.get_text()
-            doc.close()
-            return text.strip()
-        except Exception as e:
-            # Fallback to PyPDF2
+        """Extract text from PDF using PyMuPDF if available, otherwise PyPDF2."""
+        # Try PyMuPDF first (if available)
+        if HAS_PYMUPDF:
             try:
                 text = ""
-                with open(file_path, 'rb') as file:
-                    pdf_reader = PyPDF2.PdfReader(file)
-                    for page in pdf_reader.pages:
-                        text += page.extract_text()
+                doc = fitz.open(file_path)
+                for page in doc:
+                    text += page.get_text()
+                doc.close()
                 return text.strip()
-            except Exception as e2:
-                raise Exception(f"Failed to extract PDF text: {str(e2)}")
+            except Exception as e:
+                print(f"PyMuPDF failed, falling back to PyPDF2: {e}")
+        
+        # Use PyPDF2 as fallback or primary method
+        try:
+            text = ""
+            with open(file_path, 'rb') as file:
+                pdf_reader = PyPDF2.PdfReader(file)
+                for page in pdf_reader.pages:
+                    text += page.extract_text()
+            return text.strip()
+        except Exception as e2:
+            raise Exception(f"Failed to extract PDF text: {str(e2)}")
     
     def extract_text_from_docx(self, file_path: str) -> str:
         """Extract text from DOCX files."""
