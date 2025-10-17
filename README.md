@@ -130,7 +130,7 @@ This Knowledge Base Search Engine implements a complete RAG pipeline that:
 
 1. **Clone the repository**
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/Shashw1t/Unthinkable.git
 cd Unthinkable1
 ```
 
@@ -149,7 +149,7 @@ This will automatically:
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Shashw1t/Unthinkable.git
 cd Unthinkable1
 ```
 
