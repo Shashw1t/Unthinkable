@@ -54,7 +54,11 @@ Click on **"Advanced"** and add these environment variables:
 
 | Key | Value | Description |
 |-----|-------|-------------|
+<<<<<<< HEAD
 | `GOOGLE_API_KEY` | (put your own here) | Your Google Gemini API Key |
+=======
+| `GOOGLE_API_KEY` | your own api key | Your Google Gemini API Key |
+>>>>>>> bba08a7 (revoked the previous api key and attached a new one from google studios, and this is kept hidden)
 | `LLM_PROVIDER` | `google` | LLM provider to use |
 | `LLM_MODEL` | `models/gemini-2.0-flash` | Gemini model name |
 | `SIMILARITY_THRESHOLD` | `0.0` | Minimum similarity for search results |
