@@ -54,7 +54,7 @@ Click on **"Advanced"** and add these environment variables:
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `GOOGLE_API_KEY` | `AIzaSyBowh3JsGa6UlL_Af5LA_tPLvIj37kznDw` | Your Google Gemini API Key |
+| `GOOGLE_API_KEY` | (put your own here) | Your Google Gemini API Key |
 | `LLM_PROVIDER` | `google` | LLM provider to use |
 | `LLM_MODEL` | `models/gemini-2.0-flash` | Gemini model name |
 | `SIMILARITY_THRESHOLD` | `0.0` | Minimum similarity for search results |
