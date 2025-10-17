@@ -4,27 +4,7 @@ A powerful **RAG (Retrieval-Augmented Generation)** based search engine that all
 
 Demo Video Link : 
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.104-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Documentation](#api-documentation)
-- [Demo Video](#demo-video)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-
-## 🎯 Overview
+## Overview
 
 This Knowledge Base Search Engine implements a complete RAG pipeline that:
 - **Ingests** multiple document formats (PDF, TXT, DOCX)
@@ -35,41 +15,41 @@ This Knowledge Base Search Engine implements a complete RAG pipeline that:
 - **Synthesizes** answers using LLM (OpenAI GPT or Anthropic Claude)
 - **Presents** results through an intuitive web interface
 
-## ✨ Features
+## Features
 
 ### Document Processing
-- ✅ Support for PDF, TXT, and DOCX files
-- ✅ Intelligent text extraction and cleaning
-- ✅ Smart chunking with configurable overlap
-- ✅ Multiple file upload capability
+-  Support for PDF, TXT, and DOCX files
+-  Intelligent text extraction and cleaning
+-  Smart chunking with configurable overlap
+-  Multiple file upload capability
 
 ### RAG Implementation
-- ✅ Sentence Transformers for embeddings generation
-- ✅ ChromaDB vector database for efficient storage
-- ✅ Semantic similarity search with configurable parameters
-- ✅ Context-aware retrieval with metadata tracking
+-  Sentence Transformers for embeddings generation
+-  ChromaDB vector database for efficient storage
+-  Semantic similarity search with configurable parameters
+-  Context-aware retrieval with metadata tracking
 
 ### LLM Integration
-- ✅ OpenAI GPT-3.5/GPT-4 support
-- ✅ Anthropic Claude support
-- ✅ Configurable prompt engineering
-- ✅ Source citation in answers
+-  OpenAI GPT-3.5/GPT-4 support
+-  Anthropic Claude support
+-  Configurable prompt engineering
+-  Source citation in answers
 
 ### User Interface
-- ✅ Clean, modern web interface
-- ✅ Drag-and-drop file upload
-- ✅ Real-time query processing
-- ✅ Source document visualization
-- ✅ Statistics dashboard
+-  Clean, modern web interface
+-  Drag-and-drop file upload
+-  Real-time query processing
+-  Source document visualization
+-  Statistics dashboard
 
 ### Backend API
-- ✅ RESTful API with FastAPI
-- ✅ CORS enabled for frontend integration
-- ✅ Comprehensive error handling
-- ✅ File size validation
-- ✅ Health check endpoints
+-  RESTful API with FastAPI
+-  CORS enabled for frontend integration
+-  Comprehensive error handling
+-  File size validation
+-  Health check endpoints
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────┐
@@ -137,7 +117,7 @@ This Knowledge Base Search Engine implements a complete RAG pipeline that:
    - Answer returned with source citations
    - Results displayed in frontend
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -214,7 +194,7 @@ notepad .env
 python setup_and_run.py
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -245,7 +225,7 @@ MAX_FILE_SIZE_MB=10          # Maximum file size
 TOP_K_RESULTS=5              # Number of chunks to retrieve
 SIMILARITY_THRESHOLD=0.3     # Minimum similarity score
 ```
-## 📖 Usage
+## Usage
 
 ### Starting the Server
 
@@ -261,7 +241,7 @@ http://localhost:8000
 ```
 
 
-## 📚 API Documentation
+## API Documentation
 
 ### Endpoints
 
@@ -367,7 +347,7 @@ Test LLM connection.
 ```
 
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Unthinkable1/
@@ -394,7 +374,7 @@ Unthinkable1/
 └── venv/                      # Virtual environment
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### Backend
 - **FastAPI** - Modern web framework for building APIs
@@ -425,25 +405,25 @@ Unthinkable1/
 - **Uvicorn** - ASGI server
 - **python-dotenv** - Environment management
 
-## ✅ Evaluation Criteria
+## Evaluation Criteria
 
 This project addresses all evaluation focus areas:
 
-### 1. Retrieval Accuracy ⭐⭐⭐⭐⭐
+### 1. Retrieval Accuracy
 - Semantic similarity search using state-of-the-art Sentence Transformers
 - Configurable similarity threshold to filter low-quality matches
 - Intelligent text chunking with overlap for context preservation
 - Top-K retrieval with adjustable parameters
 - Source metadata tracking for traceability
 
-### 2. Synthesis Quality ⭐⭐⭐⭐⭐
+### 2. Synthesis Quality
 - Integration with leading LLMs (GPT-3.5/4, Claude)
 - Carefully engineered prompts for accurate answers
 - Context-aware answer generation
 - Source citation in responses
 - Handling of insufficient information scenarios
 
-### 3. Code Structure ⭐⭐⭐⭐⭐
+### 3. Code Structure
 - Clean separation of concerns (Document Processing, RAG, LLM, API)
 - Modular architecture for easy extension
 - Type hints throughout for code clarity
@@ -451,7 +431,7 @@ This project addresses all evaluation focus areas:
 - Configuration management with Pydantic
 - Well-documented functions and classes
 
-### 4. LLM Integration ⭐⭐⭐⭐⭐
+### 4. LLM Integration
 - Support for multiple LLM providers
 - Flexible prompt engineering
 - Efficient token usage
